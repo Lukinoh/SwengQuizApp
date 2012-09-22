@@ -24,6 +24,7 @@ public class MainActivity extends Activity {
     
     public void displayMessage(View view)
     {
+    	//Here a comment very nice !
     	Toast.makeText(this, ((EditText) findViewById(R.id.edit_text)).getText().toString(), Toast.LENGTH_SHORT).show();
     	Intent displayActivityIntent = new Intent(this, ShowMessageActivity.class);
     	EditText editText = (EditText) findViewById(R.id.edit_text);
