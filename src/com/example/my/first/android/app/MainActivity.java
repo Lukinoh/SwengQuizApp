@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
     
     public void displayMessage(View view)
     {
-    	Toast.makeText(this, "You click Display", Toast.LENGTH_SHORT).show();
+    	Toast.makeText(this, ((EditText) findViewById(R.id.edit_text)).getText().toString(), Toast.LENGTH_SHORT).show();
     	Intent displayActivityIntent = new Intent(this, ShowMessageActivity.class);
     	EditText editText = (EditText) findViewById(R.id.edit_text);
     	String userText = editText.getText().toString();
